@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rudra Agency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--dark);
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #00a177;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+    /* Hide Product Description on Mobile */
+    td:nth-child(2), th:nth-child(2) {
+        display: none;
+    }
+    
+
+    /* Make Quantity Input Smaller */
+    td input[type="number"] {
+        width: 50px; /* Adjust width as per your preference */
+    }
+
+    /* Adjust Image Size */
+    td img {
+        width: 80px; /* Adjust the image size for better fit */
+    }
+
+    /* Adjust the price column (third column) for mobile */
+    td:nth-child(3) {
+        font-size: 14px;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div> -->
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="Rudra-Agency Logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="index.html#about" class="nav-item nav-link">About</a>
+                        <a href="index.html#features" class="nav-item nav-link">Features</a>
+                        <a href="#features" class="nav-item nav-link ">Product</a>
+                        <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="order.html" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Order Now</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary page-header">
+                <div class="container text-center">
+                    <h1 class="text-white animated zoomIn mb-3">All Our Products </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Products</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <div class="container">
+            <h1>Order Form</h1>
+            <p>We only deliver in the city of Ambernath</p>
+
+            <form action="whatsapp://send?phone=+917755992366" method="get" target="_blank">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Full Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <h2>Products:</h2>
+                <p  style="-webkit-text-fill-color: red;">* + 10 Rs Is the Delivery charges applicable to the certain product  </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Description</th>
+                            <th>Price per Case (Including Delivery Charges)</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="products/20l.webp" alt="20L Water Jar" width="100"></td>
+                            <td>20 litter Water Jar - 1 Jar</td>
+                            <td>100 Rs + 10 Rs</td>
+                            <td><input type="number" name="quantity_20l" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/10l.webp" alt="10L Water Jar" width="100"></td>
+                            <td>10 litter Water Jar - 1 Jar</td>
+                            <td>110 Rs + 10 Rs</td>
+                            <td><input type="number" name="quantity_10l" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/5l.webp" alt="5L Water Jar" width="100"></td>
+                            <td>5 litter Water Jar - 1 Jar</td>
+                            <td>70 Rs + 0 Rs</td>
+                            <td><input type="number" name="quantity_5l" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/2l.webp" alt="2L Water Bottle" width="100"></td>
+                            <td>2 litter Water Bottle - Pack of 9</td>
+                            <td>250 Rs + 10 Rs</td>
+                            <td><input type="number" name="quantity_2l" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/1l.webp" alt="1L Water Bottle" width="100"></td>
+                            <td>1 litter Water Bottle - Pack of 12</td>
+                            <td>200 Rs + 10 Rs</td>
+                            <td><input type="number" name="quantity_1l" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/500ml.webp" alt="500ml Water Bottle" width="100"></td>
+                            <td>500 ml Water Bottle - Pack of 24</td>
+                            <td>200 Rs + 10 Rs</td>
+                            <td><input type="number" name="quantity_500ml" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/250ml.svg" alt="250ml Water Bottle" width="100"></td>
+                            <td>250 ml Water Bottle - Pack of 48</td>
+                            <td>280 Rs + 0 Rs</td>
+                            <td><input type="number" name="quantity_250ml" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/200ml.webp" alt="200ml Water Bottle" width="100"></td>
+                            <td>200 ml Water Bottle - Pack of 48</td>
+                            <td>230 Rs + 0 Rs</td>
+                            <td><input type="number" name="quantity_200ml" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/750 ml soda.webp" alt="750ml Soda" width="100"></td>
+                            <td>750 Ml Soda - Pack of 12</td>
+                            <td>230 Rs + 0 Rs</td>
+                            <td><input type="number" name="quantity_750ml" min="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="products/300ml Soda.webp" alt="300ml Soda" width="100"></td>
+                            <td>300 ml Soda - Pack of 24</td>
+                            <td>230 Rs + 0 Rs</td>
+                            <td><input type="number" name="quantity_300ml" min="0" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Order Summary:</h2>
+<textarea id="orderSummary" rows="10" readonly style="width: 100%;"></textarea>
+
+
+<a href="" id="whatsappLink" class="btn btn-primary" target="_blank">Place Order</a>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript to Calculate Order Summary -->
+    <script>
+        document.querySelector('form').addEventListener('input', function () {
+    let orderSummary = '';
+    let totalPrice = 0;
+    const quantities = {
+        '20l': { price: 100 + 10, name: "20 litter Jar" },
+        '10l': { price: 110 + 10, name: "10 litter Jar" },
+        '5l': { price: 70 + 0, name: "5 litter Jar" },
+        '2l': { price: 250 + 10, name: "2 litter Bottle" },
+        '1l': { price: 200 + 10, name: "1 litter Bottle" },
+        '500ml': { price: 200 + 10, name: "500 ml Bottle" },
+        '250ml': { price: 280 + 0, name: "250 ml Bottle" },
+        '200ml': { price: 230 + 0, name: "200 ml Bottle" },
+        '750ml': { price: 230 + 0, name: "750 ml Soda" },
+        '300ml': { price: 230 + 0, name: "300 ml Soda" }
+    };
+
+    // Loop through the products and calculate the order summary
+    for (let key in quantities) {
+        let quantity = document.querySelector(`input[name="quantity_${key}"]`).value;
+        if (quantity > 0) {
+            let totalItemPrice = quantities[key].price * quantity;
+            totalPrice += totalItemPrice;
+            orderSummary += `${quantities[key].name}: ${quantity} x ₹${totalItemPrice}\n`;
+        }
+    }
+
+    // Update Order Summary in the field
+    document.querySelector('#orderSummary').value = orderSummary;
+
+    // Prepare the final message for WhatsApp
+    const name = document.querySelector('#name').value;
+    const mobile = document.querySelector('#mobile').value;
+    const address = document.querySelector('#address').value;
+
+    let orderDetails = `Name: ${name}\nMobile: ${mobile}\nAddress: ${address}\n\n${orderSummary}\nTotal Price: ₹${totalPrice}`;
+
+    // Encode the message to make it URL-safe
+    let encodedOrderDetails = encodeURIComponent(orderDetails);
+
+    // Update the WhatsApp link with the encoded details
+    let whatsappLink = `https://wa.me/7755992366?text=${encodedOrderDetails}`;
+    document.querySelector('#whatsappLink').setAttribute('href', whatsappLink);
+});
+
+    </script>
+    
+</body>
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Contact Details -->
+                <div class="col-md-6">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled text-light">
+                        <ul>
+                            <li class="mb-3">
+                                <a href="https://maps.app.goo.gl/i4awCy5Yp5QNN3er9" 
+                                   target="_blank" 
+                                   style="text-decoration: none; color: white;">
+                                    <i class="fa fa-map-marker-alt me-3 text-primary"></i>
+                                    Shop No. 11 Plot 99/100, Anurag Chs, Hutaatma Chowk Near Saiideep Bajaj Servicecenter, Sai Section, Ambernath (E)421501 . Dist. Thane
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="tel:+917755992366" style="text-decoration: none; color: white;">
+                                    <i class="fa fa-phone-alt me-3 text-primary"></i>+91 7755992366
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="tel:+917350710265" style="text-decoration: none; color: white;">
+                                    <i class="fa fa-phone-alt me-3 text-primary"></i>+91 7350710265
+                                </a>
+                            </li>
+                        </ul>
+                        
+                       <li class="mb-3"><i class="fa fa-envelope me-3 text-primary"></i>info@example.com</li>
+                    </ul>
+                </div>
+                <!-- Map -->
+                <div class="col-md-6">
+                    <h5 class="text-white mb-4">Our Location</h5>
+                    <div class="rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7076636012735!2d73.17857731043122!3d19.20796668194895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7947f90aac9ef%3A0x177002a9075cffb7!2sRudra%20Agency!5e0!3m2!1sen!2sin!4v1735970317969!5m2!1sen!2sin" referrerpolicy="no-referrer-when-downgrade" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1735969986264!5m2!1sen!2sin!6m8!1m7!1s94HmDdqKO-jTu0NsuVCyZQ!2m2!1d19.20789186632402!2d73.18110936052173!3f46.57149286979005!4f6.583130928382275!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Rudra-Agency</a>, All Right Reserved. 
+                    
+                    
+                    Developed By <a class="border-bottom" href="#">Rudra Malvankar</a>
+                    <!-- <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html">Home</a>
+                        <a href="terms&contdition.html">Terms & Condition</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <!-- <a href="">FQAs</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+</html>
